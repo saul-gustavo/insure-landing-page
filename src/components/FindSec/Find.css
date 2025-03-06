@@ -1,0 +1,63 @@
+.find-sec {
+    width: 100%;
+    max-width: 90%;
+    margin: 0rem auto 3rem;
+    background-color: var(--dark-violet);
+    padding: 4rem 1rem;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    position: relative;
+}
+
+.find-title {
+    font-size: clamp(1.7rem, 10vw, 3.5rem);
+    font-family: var(--dm-serif-heading);
+    font-weight: 400;
+    color: var(--white);
+    z-index: 10;
+}
+
+.find-a {
+   width: 200px;
+   margin: 0 auto;
+   display: inline-block;
+   border: 1px solid;
+   color: var(--very-light-gray);
+   padding: .8rem 2rem;
+   text-decoration: none;
+   transition: var(--transition);
+   z-index: 10;
+}
+
+.find-a:hover {
+    background-color: var(--white);
+    color: black;
+}
+
+.wave-find {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 170px;
+    height: 100%;
+    background-image: url(/src/assets/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .find-sec {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .find-title {
+        text-align: left;
+    }
+
+    .wave-find {
+        width: 600px;
+        background-image: url(/src/assets/bg-pattern-how-we-work-desktop.svg);
+    }
+}

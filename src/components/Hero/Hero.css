@@ -1,0 +1,134 @@
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: var(--dark-violet);
+    position: relative;
+}
+
+.hero-text {
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text .line-top {
+    width: 100%;
+    max-width: 150px;
+    height: 2px;
+    background-color:var(--very-light-gray);
+    margin: 1rem auto 1.5rem;
+    display: none;
+}
+
+.hero-text .hero-title {
+    font-family: var(--dm-serif-heading);
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hero-text .hero-sub {
+    color: var(--very-light-gray);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.hero-a-btn {
+   display: inline-block;
+   border: 1px solid;
+   color: var(--very-light-gray);
+   padding: .8rem 4rem;
+   text-decoration: none;
+   transition: var(--transition);
+}
+
+.hero-a-btn:hover {
+    background-color: var(--white);
+    color:black;
+}
+
+.hero-imagen {
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 450px;
+}
+
+.wave-top {
+    background-image: url(/src/assets/bg-pattern-intro-left-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+    .hero-img {
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        flex-direction: row;
+        width: 100%;
+        min-height: 50vh;
+        position: relative;
+        padding: 1rem 5rem;
+    }
+
+    .hero-text .line-top {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .hero-img {
+        width: 480px;
+        height: 600px;
+    }
+
+    .wave-top {
+        display: none;
+    }
+
+    .wave-top-desk {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-image: url(/src/assets/bg-pattern-intro-right-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wave-top-desk {
+        width: 100%;
+        max-width: 380px;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-img {
+        position: relative;
+        top: 5rem;
+    }
+}
