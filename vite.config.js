@@ -4,7 +4,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/insure-landing-page/',
+  base: "/insure-landing-page/",
   plugins: [react()],
   resolve: {
     alias: {
