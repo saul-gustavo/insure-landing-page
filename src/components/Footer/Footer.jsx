@@ -62,7 +62,10 @@ export default function Footer() {
                 </nav>
             </div>
 
-            <div className="line-footer"></div>
+            <div className="autor-field">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://github.com/saul-gustavo" target="_blank">Saúl Gustavo Alcantar Sánchez</a>.
+            </div>
         </footer>
     )
 }

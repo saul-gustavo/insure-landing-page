@@ -90,6 +90,20 @@
     text-decoration: underline;
 }
 
+.autor-field {
+    margin-top: 3rem;
+    font-size: .8rem;
+}
+
+.autor-field > a {
+    text-decoration: none;
+    color: var(--grayish-blue);
+}
+
+.autor-field > a:hover {
+    color: black;
+}
+
 @media (min-width: 500px) {
 
     .footer-links {
