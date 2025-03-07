@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/saul-gustavo/insure-landing-page",
+  "homepage": "https://saul-gustavo.github.io/insure-landing-page/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
